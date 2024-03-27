@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 @layer utilities {
-	.sr-only {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		white-space: nowrap; /* added line */
-		border: 0;
-	}
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
 
-	.footer-link {
-		@apply cursor-pointer underline;
-	}
+  .footer-link {
+    @apply cursor-pointer underline;
+  }
+
+  .heading-xl {
+    @apply font-mono text-[1.625rem] font-bold leading-[2.375rem];
+  }
+
+  .heading-l {
+    @apply font-mono text-base font-bold leading-normal sm:text-[1.375rem] sm:leading-[2.0625rem];
+  }
+
+  .heading-m {
+    @apply font-mono text-[0.8125rem] leading-normal sm:text-base sm:leading-6;
+  }
+
+  .heading-s {
+    @apply font-mono text-[0.6875rem] leading-normal sm:text-[0.8125rem] sm:leading-[1.25rem];
+  }
+
+  .paragraph {
+    @apply font-mono text-[0.8125rem] leading-[1.5625rem] sm:text-[0.9375rem];
+  }
 }
