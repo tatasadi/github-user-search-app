@@ -29,6 +29,7 @@ const config = {
         "dark-blue": "#141D2F",
         "deep-blue": "#1E2A47",
         red: "#F74646",
+        dark: "#222731",
       },
       keyframes: {
         "accordion-down": {

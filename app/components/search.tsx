@@ -6,26 +6,21 @@ import { Button } from "./ui/button"
 const Search = ({ error, username }) => {
   return (
     <div className="relative">
-      <Image
-        src={iconSearch}
-        alt="Search"
-        className="absolute left-8 top-[1.44rem]"
-      />
+      <div className="absolute bottom-0 left-0 top-0 px-8 py-[1.44rem]">
+        <Image src={iconSearch} alt="Search" />
+      </div>
       <Input
         type="search"
         placeholder="Search GitHub username..."
         className="pl-20 pr-[7rem]"
         value={username}
       />
-      <p className="text-red absolute right-[8.5rem] top-[1.3rem] mt-1 text-[0.9375rem] font-bold">
-        {error}
-      </p>
-      <Button
-        variant="default"
-        className="absolute right-[0.63rem] top-[0.59rem]"
-      >
-        Search
-      </Button>
+      <div className="absolute bottom-0 right-0 top-0 flex items-center gap-6 px-[0.63rem] py-[0.59rem]">
+        <p className="text-red mt-1 text-[0.9375rem] font-bold">{error}</p>
+        <Button variant="default" className="">
+          Search
+        </Button>
+      </div>
     </div>
   )
 }
