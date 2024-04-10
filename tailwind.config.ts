@@ -28,6 +28,7 @@ const config = {
         "off-white": "#FEFEFE",
         "dark-blue": "#141D2F",
         "deep-blue": "#1E2A47",
+        red: "#F74646",
       },
       keyframes: {
         "accordion-down": {

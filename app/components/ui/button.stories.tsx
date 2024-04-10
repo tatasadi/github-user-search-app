@@ -1,9 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react"
+import Image from "next/image"
+import iconSearch from "../../../public/icon-search.svg"
 
 import { Button } from "./button"
 
 const meta = {
-  title: "Component/Button",
+  title: "Components/Button",
   component: Button,
   parameters: {
     layout: "centered",
@@ -14,9 +16,17 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Primary: Story = {
+export const Search: Story = {
   args: {
     variant: "default",
-    children: "Button",
+    children: "Search",
+  },
+}
+
+export const Icon: Story = {
+  args: {
+    variant: "ghost",
+    size: "icon",
+    children: <Image src={iconSearch} alt="Search" />,
   },
 }
