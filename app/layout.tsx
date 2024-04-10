@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Space_Mono } from "next/font/google"
 import "./globals.css"
 import Attribution from "@/app/components/attribution"
+import { ThemeProvider } from "./theme-provider"
 
 const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] })
 
@@ -28,8 +29,15 @@ export default function RootLayout({
       <body
         className={`${spaceMono.className} flex min-h-screen flex-col items-center justify-center`}
       >
-        {children}
-        <Attribution />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Attribution />
+        </ThemeProvider>
       </body>
     </html>
   )

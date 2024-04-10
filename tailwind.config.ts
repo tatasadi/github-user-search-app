@@ -28,6 +28,7 @@ const config = {
         "off-white": "#FEFEFE",
         "dark-blue": "#141D2F",
         "deep-blue": "#1E2A47",
+        "light-blue": "#90A4D4",
         red: "#F74646",
         dark: "#222731",
       },

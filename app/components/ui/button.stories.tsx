@@ -25,7 +25,7 @@ export const Search: Story = {
 
 export const Icon: Story = {
   args: {
-    variant: "ghost",
+    variant: "icon",
     size: "icon",
     children: <Image src={iconSearch} alt="Search" />,
   },
