@@ -27,7 +27,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${spaceMono.className} flex min-h-screen flex-col items-center justify-center`}
+        className={`${spaceMono.className} dark:bg-deep-blue flex min-h-screen flex-col items-center justify-center`}
       >
         <ThemeProvider
           attribute="class"

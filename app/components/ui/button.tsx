@@ -19,7 +19,7 @@ const buttonVariants = cva(
         ghost:
           "text-bright-blue uppercase text-dark hover:text-cool-blue dark:text-white dark:hover:text-light-blue font-bold text-[0.8125rem] tracking-[0.15625rem]",
         icon: "text-bright-blue",
-        link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
+        link: "text-deep-blue dark:text-white",
       },
       size: {
         default: "h-[3.125rem] px-6 py-3",
