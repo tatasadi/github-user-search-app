@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Space_Mono } from "next/font/google"
 import "./globals.css"
-import Attribution from "@/components/attribution"
+import Attribution from "@/app/components/attribution"
 
-const inter = Inter({ subsets: ["latin"] })
+const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] })
 
 export const metadata: Metadata = {
   title: "Github User Search App",
@@ -26,7 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className} flex min-h-screen flex-col items-center justify-center`}
+        className={`${spaceMono.className} flex min-h-screen flex-col items-center justify-center`}
       >
         {children}
         <Attribution />
