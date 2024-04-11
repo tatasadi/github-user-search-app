@@ -10,6 +10,7 @@ import IconLink from "./components/icons/icon-link"
 import { useGitHubUser } from "./contexts/github-user-context"
 import Image from "next/image"
 import { Skeleton } from "./components/ui/skeleton"
+import errorImage from "@/public/error.avif"
 
 export default function Home() {
   const { userData, isLoading, responseError } = useGitHubUser()
@@ -31,7 +32,10 @@ export default function Home() {
               </div>
             </div>
           ) : responseError ? (
-            <p className="mt-4 text-center text-red">{responseError}</p>
+            <div className="flex flex-col gap-10">
+              <pre className="mt-4 text-center text-red">{responseError}</pre>
+              <Image src={errorImage} alt="Error" />
+            </div>
           ) : (
             userData && (
               <>
