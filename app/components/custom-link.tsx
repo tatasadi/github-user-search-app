@@ -1,27 +1,36 @@
 import { cn } from "../lib/utils"
-import IconLink from "./icon-link"
 import { Button } from "./ui/button"
 
 const CustomLink = ({
-  link,
+  children,
+  text = "",
+  isLink = false,
   isNotAvailable = false,
+  className = "",
 }: {
-  link: string
-  isNotAvailable: boolean
+  children?: React.ReactNode
+  text?: string
+  isLink?: boolean
+  isNotAvailable?: boolean
+  className?: string
 }) => {
   return (
     <Button
       variant="link"
+      size="link"
       className={cn(
-        "flex items-center gap-4",
+        "flex items-center gap-4 text-[0.9375rem] font-medium text-cool-blue dark:text-white",
         isNotAvailable ? "opacity-50" : "",
+        className,
       )}
     >
-      <IconLink />
+      {children}
       {isNotAvailable ? (
         <span>Not available</span>
+      ) : isLink ? (
+        <a className="hover:underline">{text}</a>
       ) : (
-        <a className="hover:underline">{link}</a>
+        <span>{text}</span>
       )}
     </Button>
   )

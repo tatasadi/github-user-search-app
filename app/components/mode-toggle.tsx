@@ -2,8 +2,8 @@
 
 import { useTheme } from "next-themes"
 import { Button } from "./ui/button"
-import IconSun from "./icon-sun"
-import IconMoon from "./icon-moon"
+import IconSun from "./icons/icon-sun"
+import IconMoon from "./icons/icon-moon"
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme()

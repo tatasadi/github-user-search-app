@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import CustomLink from "./custom-link"
+import IconLink from "./icons/icon-link"
+import IconTwitter from "./icons/icon-twitter"
 
 const meta = {
   title: "Components/CustomLink",
@@ -13,14 +15,17 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Link: Story = {
+export const Website: Story = {
   args: {
-    link: "www.link.com",
+    text: "www.link.com",
+    isLink: true,
+    children: <IconLink />,
   },
 }
 
-export const NotAvailable: Story = {
+export const TwitterNotAvailable: Story = {
   args: {
     isNotAvailable: true,
+    children: <IconTwitter />,
   },
 }
