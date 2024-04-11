@@ -24,7 +24,7 @@ export default function Home() {
         <Search />
         <section className="mt-4 grid w-full grid-cols-[auto_1fr] gap-5 rounded-[0.9375rem] bg-white px-6 pb-12 pt-8 shadow-[0_16px_30px_-10px_rgba(70,96,187,0.20)] dark:bg-deep-blue dark:shadow-none sm:mt-6 sm:gap-x-10 sm:p-12">
           {isLoading ? (
-            <div className="flex items-center space-x-4">
+            <div className="col-span-2 flex items-center space-x-4">
               <Skeleton className="h-12 w-12 rounded-full" />
               <div className="space-y-2">
                 <Skeleton className="h-4 w-[250px]" />
@@ -32,7 +32,7 @@ export default function Home() {
               </div>
             </div>
           ) : responseError ? (
-            <div className="flex flex-col gap-10">
+            <div className="col-span-2 flex flex-col items-center gap-10">
               <pre className="mt-4 text-center text-red">{responseError}</pre>
               <Image src={errorImage} alt="Error" />
             </div>
