@@ -14,25 +14,27 @@ const CustomLink = ({
   isNotAvailable?: boolean
   className?: string
 }) => {
+  const textStyles = "max-w-full text-wrap overflow-wrap break-all"
+
   return (
-    <Button
-      variant="link"
-      size="link"
+    <div
       className={cn(
-        "flex items-center gap-4 text-[0.9375rem] font-medium text-cool-blue dark:text-white",
+        "flex items-center gap-4 text-[0.9375rem] font-medium text-cool-blue dark:text-white sm:items-start",
         isNotAvailable ? "opacity-50" : "",
         className,
       )}
     >
       {children}
       {isNotAvailable ? (
-        <span>Not available</span>
+        <span className={textStyles}>Not available</span>
       ) : isLink ? (
-        <a className="hover:underline">{text}</a>
+        <a href={text} className={cn("hover:underline", textStyles)}>
+          {text}
+        </a> // Ensure to use href for links
       ) : (
-        <span>{text}</span>
+        <span className={textStyles}>{text}</span>
       )}
-    </Button>
+    </div>
   )
 }
 
