@@ -3,7 +3,7 @@ import { Space_Mono } from "next/font/google"
 import "./globals.css"
 import Attribution from "@/app/components/attribution"
 import { ThemeProvider } from "./theme-provider"
-import { GitHubUserProvider } from "./contexts/github-user-context"
+import QueryProvider from "./query-provider"
 
 const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] })
 
@@ -36,10 +36,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <GitHubUserProvider>
+          <QueryProvider>
             {children}
             <Attribution />
-          </GitHubUserProvider>
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>

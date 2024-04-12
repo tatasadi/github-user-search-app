@@ -65,10 +65,8 @@ The GitHub users API endpoint is `https://api.github.com/users/:username`. So, i
 ![](https://img.shields.io/badge/React-fff?style=for-the-badge&logo=React&logoColor=000&color=5ed3f3)
 ![](https://img.shields.io/badge/Next.JS-fff?style=for-the-badge&logo=next.js&logoColor=fff&color=000)
 ![](https://img.shields.io/badge/tailwindcss-fff?style=for-the-badge&logo=tailwindcss&logoColor=fff&color=15b8c5)
-![](https://img.shields.io/badge/React%20Icons-fff?style=for-the-badge&logo=react&logoColor=fff&color=e92a6b)
-![](https://img.shields.io/badge/Zod-fff?style=for-the-badge&logo=zod&logoColor=fff&color=3068b7)
+![](https://img.shields.io/badge/React%20hook%20form-fff?style=for-the-badge&logo=react-hook-form&logoColor=fff&color=ec5990)
 ![](https://img.shields.io/badge/React%20Query-fff?style=for-the-badge&logo=react-query&logoColor=fff&color=f73f51)
-![](https://img.shields.io/badge/Storybook-fff?style=for-the-badge&logo=storybook&logoColor=fff&color=ff4785)
 
 ### Code Quality with
 
@@ -77,7 +75,7 @@ The GitHub users API endpoint is `https://api.github.com/users/:username`. So, i
 
 ### Implementation time
 
-This challenge was completed over a span of 6 hours.
+This challenge was completed over a span of 7 hours.
 
 ## Author
 
