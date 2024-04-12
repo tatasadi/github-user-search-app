@@ -15,6 +15,13 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
     - [Built with](#built-with)
     - [Code Quality with](#code-quality-with)
     - [Implementation time](#implementation-time)
+  - [Project Highlights](#project-highlights)
+    - [Theming with `next-themes`](#theming-with-next-themes)
+    - [Secure API Calls with Server Actions](#secure-api-calls-with-server-actions)
+    - [Data Fetching with React Query](#data-fetching-with-react-query)
+    - [Form Handling with React-Hook-Form](#form-handling-with-react-hook-form)
+    - [UI Component Library Integration](#ui-component-library-integration)
+    - [Accessibility and User Experience](#accessibility-and-user-experience)
   - [Author](#author)
 
 ## Overview
@@ -76,6 +83,41 @@ The GitHub users API endpoint is `https://api.github.com/users/:username`. So, i
 ### Implementation time
 
 This challenge was completed over a span of 7 hours.
+
+## Project Highlights
+
+This project showcases a modern web application built with **Next.js**, integrating several advanced features and best practices in web development. Below are the key highlights and technologies used:
+
+### Theming with `next-themes`
+
+- **Dynamic Theming**: Implemented dynamic theming capabilities using `next-themes`, allowing users to switch between light and dark modes seamlessly. This integration enhances user experience and accessibility by respecting system preferences and providing theme toggle options.
+
+### Secure API Calls with Server Actions
+
+- **Server-Side Authentication**: Utilized Next.js server actions to securely call the GitHub API, ensuring sensitive credentials (access tokens) are managed server-side and never exposed to the client. This approach uses environment variables to safely store and access API tokens.
+- **Enhanced Security and Performance**: By handling API requests on the server, the application enhances overall security and leverages server-side rendering for improved performance.
+
+### Data Fetching with React Query
+
+- **State Management for Fetching**: Integrated React Query to manage the fetching, caching, and updating of server state. This includes:
+  - **Loading States**: React Query’s loading states are used to provide real-time feedback to the user, improving the interactive experience.
+  - **Error Handling**: Systematic error handling strategies to gracefully manage and display errors to users when API calls fail.
+  - **Data Management**: Efficient data synchronization and UI state updates without extensive boilerplate.
+
+### Form Handling with React-Hook-Form
+
+- **Efficient Form Management**: Leveraged `react-hook-form` to handle forms, which simplifies form validation and submission while reducing re-renders and improving performance.
+- **Validation**: Built-in validation mechanisms to ensure data integrity before submitting user input to the server.
+
+### UI Component Library Integration
+
+- **Reusable UI Components**: Utilized Shadcn’s UI component library, which builds on top of Radix UI. This choice promotes accessibility and flexibility, providing robust components like buttons, inputs, and skeletons.
+- **Skeleton Loading Screens**: Implemented skeleton screens during data loading phases to enhance perceived performance and keep users informed about the loading state.
+
+### Accessibility and User Experience
+
+- **Radix UI Foundation**: The use of Radix UI components ensures that accessibility is a core feature, with components adhering to WAI-ARIA standards.
+- **Responsive and Interactive UI**: Designed a responsive layout that adjusts to various device screens and provides interactive feedback based on user actions.
 
 ## Author
 
