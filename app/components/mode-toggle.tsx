@@ -14,7 +14,7 @@ export function ModeToggle() {
         <Button
           onClick={() => setTheme("light")}
           variant="ghost"
-          className="flex items-center gap-4"
+          className="flex h-auto items-center gap-4 p-0"
         >
           <span>Light</span>
           <span className="h-5 w-5">
@@ -25,7 +25,7 @@ export function ModeToggle() {
         <Button
           onClick={() => setTheme("dark")}
           variant="ghost"
-          className="flex items-center gap-4"
+          className="flex h-auto items-center gap-4 p-0"
         >
           <span>Dark</span>
           <span className="h-5 w-5">

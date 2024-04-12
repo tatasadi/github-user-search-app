@@ -77,7 +77,7 @@ The GitHub users API endpoint is `https://api.github.com/users/:username`. So, i
 
 ### Implementation time
 
-This challenge was completed over a span of x hours.
+This challenge was completed over a span of 6 hours.
 
 ## Author
 

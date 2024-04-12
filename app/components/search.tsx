@@ -35,7 +35,9 @@ const Search = () => {
         if (error instanceof Error && error.message.includes("404")) {
           setResponseError("User not found")
         } else {
-          setResponseError("An error occurred")
+          setResponseError(
+            `An error occurred while fetching the data: ${error}`,
+          )
         }
         setUserData(null)
       }
@@ -62,7 +64,7 @@ const Search = () => {
         className="pl-12 pr-[8rem] sm:pl-20"
         {...register("username", { required: "Enter username" })}
       />
-      <div className="absolute bottom-0 right-0 top-0 flex items-center gap-6 px-4 py-[0.59rem]">
+      <div className="absolute bottom-0 right-0 top-0 flex items-center gap-6 px-2 py-[0.59rem]">
         {errors.username && (
           <p className="mt-1 text-[0.9375rem] font-bold text-red">
             {errors.username.message}
